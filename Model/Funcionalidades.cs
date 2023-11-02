@@ -28,7 +28,7 @@ namespace Estacionamento.Model
 
         public void CadastrarVeiculos()
         {
-            Console.WriteLine("Digite a placa do veículo para estacionar\n"+
+            Console.WriteLine("Digite a placa do veículo para estacionar\n" +
                               "Lembre-se de seguir o formato de 3 letras e 4 numeros como o do exemplo xxx-0000:");
             string formatar = Console.ReadLine() ?? throw new ArgumentNullException("A placa não pode ser nula.");
             Veiculos.Add(formatar.ToUpper());
@@ -54,6 +54,7 @@ namespace Estacionamento.Model
                     Console.WriteLine("Digite um veículo válido.");
                     Console.ResetColor();
                 }
+
             }
         }
 
@@ -70,9 +71,7 @@ namespace Estacionamento.Model
             {
                 foreach (string item in Veiculos)
                 {
-
                     Console.WriteLine(item);
-
                 }
                 return true;
             }

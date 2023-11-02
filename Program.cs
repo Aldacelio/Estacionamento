@@ -17,10 +17,8 @@ Console.Clear();
 // //Instancias necessarias
 Funcionalidades funcionalidades = new Funcionalidades(precoInicial, precoPorHora);
 
-
 //Para manter o loop
-int cont = 1;
-while (cont == 1)
+while (true)
 {
 
     Console.Clear();
